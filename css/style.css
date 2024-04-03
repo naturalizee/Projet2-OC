@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 
 :root {
@@ -57,6 +58,58 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+/****** Header ***********/
+.liste_nav li {
+    margin-right: 68px;
+    padding-top: 20px;
+}
+
+.liste_nav li:hover {
+    border-top: #0065FC solid 2px;
+    color: #0065FC;
+    padding-top: 16px;
+    margin-top: 2px;
+    }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liste_nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0; 
+    margin-right: 20px;
+}
+
+.liste_nav li:last-child {
+    margin-right: 0;
+}
+
+img.logo_header {
+    width: 61px;
+    height: 19px;
+}
+
+.header, .menu-container {
+    height: 79px;
+}
+
+/* /****** formulaire de recherche ***********
+.bouton-rechercher {
+    background:#0065FC;
+}
+
+.fa-solid {
+    color: black;
+    background: #F2F2F2;
+    height: 49px;
+    width: 50px;
+} */
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -121,9 +174,6 @@ a {
     margin-bottom: 5px;
 }
 
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -163,5 +213,9 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .liste_nav li:hover {
+        border-bottom: blue solid;
+        border-top: none;
+        }
     /* ... */
 }
