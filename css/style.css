@@ -59,6 +59,12 @@ a {
     color: var(--main-bg-color)
 }
 
+.promesse h1 {
+    margin-bottom: 8px;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
 /****** Header ***********/
 .liste_nav li {
     margin-right: 68px;
@@ -98,19 +104,66 @@ img.logo_header {
     height: 79px;
 }
 
-/* /****** formulaire de recherche ***********
-.bouton-rechercher {
-    background:#0065FC;
+/****** formulaire de recherche ***********/
+.formulaire {
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
-.fa-solid {
+.formulaire-recherche {
+display: flex;
+justify-content: flex-start;
+}
+
+.formulaire input {
+    height: 49px;
+}
+
+.fa-solid.fa-location-dot {
     color: black;
     background: #F2F2F2;
     height: 49px;
     width: 50px;
-} */
+    border-radius: 15px 0px 0px 15px; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+#localisation {
+    border: #F2F2F2 solid 1px;
+    height: 46px;
+}
+
+#localisation::placeholder {
+    font-size: 18px;
+    color: black ;
+    font-weight: bold;
+    opacity: 1;
+    text-align: center;
+}
+
+#bouton-rechercher {
+    font-size: 18px;
+    color: white;
+    background-color: #0065FC;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0px 15px 15px 0px;
+    border: solid #0065FC;
+    width: 132px;
+}
+
+#bouton-rechercher:active {
+    transform: translateY(1px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.element2 input[type="text"] {
+    font-weight: bold;
+    text-align: center;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
