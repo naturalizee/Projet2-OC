@@ -76,7 +76,7 @@ a {
     color: #0065FC;
     padding-top: 16px;
     margin-top: 2px;
-    }
+}
 
 .header {
     display: flex;
@@ -87,7 +87,7 @@ a {
 .liste_nav {
     display: flex;
     list-style-type: none;
-    padding: 0; 
+    padding: 0;
     margin-right: 20px;
 }
 
@@ -100,7 +100,8 @@ img.logo_header {
     height: 19px;
 }
 
-.header, .menu-container {
+.header,
+.menu-container {
     height: 79px;
 }
 
@@ -111,8 +112,8 @@ img.logo_header {
 }
 
 .formulaire-recherche {
-display: flex;
-justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .formulaire input {
@@ -124,12 +125,11 @@ justify-content: flex-start;
     background: #F2F2F2;
     height: 49px;
     width: 50px;
-    border-radius: 15px 0px 0px 15px; 
-    display:flex;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 #localisation {
     border: #F2F2F2 solid 1px;
@@ -138,7 +138,7 @@ justify-content: flex-start;
 
 #localisation::placeholder {
     font-size: 18px;
-    color: black ;
+    color: black;
     font-weight: bold;
     opacity: 1;
     text-align: center;
@@ -164,6 +164,71 @@ justify-content: flex-start;
     font-weight: bold;
     text-align: center;
 }
+
+/****** Filtres ***********/
+.barre-filtres {
+    display: flex;
+    width: 758px;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.barre-filtres button {
+    border-radius: 25px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    border: #D9D9D9 solid 2px;
+    background-color: white;
+}
+
+.element-filtre-1 {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    width: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filtre-economique,
+#filtre-familial,
+#filtre-romantique,
+#filtre-nos-pepites {
+    padding: 0px 19px;
+    background-color: white
+}
+
+#filtre-economique:hover,
+#filtre-familial:hover,
+#filtre-romantique:hover,
+#filtre-nos-pepites:hover {
+    background-color: #DEEBFF;
+}
+
+/****** barre-infos ***********/
+.barre-infos {
+    display: flex;
+    margin: 35px 0px;
+    align-items: center;
+}
+
+.fa-solid.fa-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    border: #D9D9D9 solid 1px;
+    border-radius: 50%;
+    color: #0065FC;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -269,6 +334,7 @@ justify-content: flex-start;
     .liste_nav li:hover {
         border-bottom: blue solid;
         border-top: none;
-        }
+    }
+
     /* ... */
 }
