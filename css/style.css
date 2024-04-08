@@ -160,9 +160,10 @@ img.logo_header {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.element2 input[type="text"] {
+.element-formulaire-2 input[type="text"] {
     font-weight: bold;
     text-align: center;
+    font-size: 18px;
 }
 
 /****** Filtres ***********/
@@ -245,6 +246,54 @@ img.logo_header {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+
+}
+
+.section-title {
+    margin-bottom: 15px;
+}
+
+.hebergements-cards .card {
+    height: 207px;
+    margin: 15px 15px;
+}
+
+.hebergements img {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 4px;
+}
+
+.hebergements .card-content {
+    padding: 0px 15px;
+}
+
+.hebergements .card-subtitle {
+    margin: 8px 0px;
+    height: 19px;
+}
+
+.bouton-afficher-plus {
+    border: none;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #F2F2F2;
+}
+
+.bouton-afficher-plus:active {
+    transform: translateY(1px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
 /****** Populaires ***********/
