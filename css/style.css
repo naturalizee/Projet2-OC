@@ -65,6 +65,12 @@ a {
     font-size: 22px;
 }
 
+footer {
+    margin-top: 35px;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+}
+
 /****** Header ***********/
 .liste_nav li {
     margin-right: 68px;
@@ -339,7 +345,8 @@ img.logo_header {
 
 /****** Activités ***********/
 .activites {
-    margin: 35px 30px;
+    margin: 35px 0px;
+    padding-bottom: 30px;
 }
 .activites-cards {
     display: grid;
@@ -374,49 +381,26 @@ img.logo_header {
     font-size: 16px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Footer ***********/
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+.liens-footer h4 {
+    font-size: 18px;
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    .liste_nav li:hover {
-        border-bottom: blue solid;
-        border-top: none;
-    }
+.liens-footer ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px 20px;
+    font-size: 16px;
+    height: 163px;
+}
 
-    /* ... */
+.liens-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.liens-footer li {
+padding-top: 15px;
 }
