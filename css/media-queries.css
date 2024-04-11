@@ -1,12 +1,30 @@
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .barre-filtres {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .element-filtre-1 {
+        padding-right: 20px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
+    .hebergements-and-populaires section {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
     .hebergements {
         width: 100%;
+        margin-bottom: 0px;
     }
 
     .populaires {
@@ -31,14 +49,86 @@
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites img {
+        height: 200px;
+    }
+
+    .activites .card-content {
+        height: 50px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .liste_nav li:hover {
-        border-bottom: blue solid;
-        border-top: none;
+    .main-container {
+        width: 100%;
+        padding: 0;
     }
 
-    /* ... */
+    .parametres-recherche {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* .hebergements-and-populaires {
+        display: flex;
+        justify-content: column-reverse;
+    } */
+
+    /* .hebergements-cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: row;
+    } */
+
+    .liste_nav {
+        margin: 0;
+    }
+
+    .liste_nav li {
+        width: 50%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .liste_nav a {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .liste_nav li:hover {
+        border-bottom: #0065FC solid 2px;
+        border-top: none;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .logo-container {
+        padding-top: 30px;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+
+    .barre-filtres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .barre-filtres button {
+        width: 162px;
+    }
+
 }
