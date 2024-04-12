@@ -102,7 +102,8 @@ footer {
 }
 
 img.logo_header {
-    width: 61px; /*Taille du logo fixe constamment*/
+    width: 61px;
+    /*Taille du logo fixe constamment*/
     height: 19px;
 }
 
@@ -130,7 +131,8 @@ img.logo_header {
     color: black;
     background: #F2F2F2;
     height: 49px;
-    width: 50px; /*Taille de l'icone fixe*/
+    width: 50px;
+    /*Taille de l'icone fixe*/
     border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
@@ -151,6 +153,10 @@ img.logo_header {
     text-align: center;
 }
 
+#localisation:focus {
+    outline: none;
+}
+
 #bouton-rechercher {
     font-size: 18px;
     color: white;
@@ -159,7 +165,8 @@ img.logo_header {
     font-weight: bold;
     border-radius: 0px 15px 15px 0px;
     border: solid #0065FC;
-    width: 132px; /*Taille du bouton fixe*/
+    width: 132px;
+    /*Taille du bouton fixe*/
 }
 
 #bouton-rechercher:active {
@@ -174,10 +181,16 @@ img.logo_header {
 }
 
 /****** Filtres ***********/
+
+.filtres {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .barre-filtres {
     display: flex;
+    width: 49%;
     max-width: 758px;
-    height: 50px;
     justify-content: space-between;
 }
 
@@ -193,11 +206,13 @@ img.logo_header {
 }
 
 .element-filtre-1 {
+    padding-right: 20px;
     height: 50px;
     font-size: 18px;
     font-weight: bold;
     border: none;
-    width: 54px; /*Taille ne change pas*/
+    width: 54px;
+    /*Taille ne change pas*/
     display: flex;
     align-items: center;
 }
@@ -216,6 +231,33 @@ img.logo_header {
 #filtre-nos-pepites:hover {
     background-color: #DEEBFF;
 }
+
+#bouton-rechercher-mobile {
+    display: none;
+    background-color: #0065FC;
+    border-radius: 15px;
+    border: solid #0065FC;
+    width: 49px;
+    height: 49px;
+    box-shadow:
+        0px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+#bouton-rechercher-mobile i {
+    color: white;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+#bouton-rechercher-mobile:active {
+    transform: translateY(1px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
 
 /****** barre-infos ***********/
 .barre-infos {
@@ -264,7 +306,7 @@ img.logo_header {
 }
 
 .hebergements-cards .card {
-    height: 207px;
+    height: 1fr;
 }
 
 .hebergements img {
