@@ -305,10 +305,6 @@ img.logo_header {
     margin-top: 30px;
 }
 
-.hebergements-cards .card {
-    height: 1fr;
-}
-
 .hebergements img {
     display: flex;
     object-fit: cover;

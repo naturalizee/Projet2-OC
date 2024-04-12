@@ -179,7 +179,7 @@
     /****** Hebergements-and-populaires ***********/
     .hebergements-and-populaires {
         flex-direction: column-reverse;
-        margin-top: none;
+        margin-top: 0px;
     }
 
     /****** Hebergements ***********/
