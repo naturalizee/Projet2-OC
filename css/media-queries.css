@@ -142,7 +142,7 @@
 
     /****** Filtres ***********/
     .element-filtre-1 {
-        width: 1fr;
+        width: 100%;
     }
 
     .barre-filtres div {
@@ -151,7 +151,7 @@
 
     .barre-filtres {
         display: flex;
-        width: 1fr;
+        width: 100%;
         justify-content: flex-start;
         flex-wrap: wrap;
         max-width: 375px;

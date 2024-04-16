@@ -103,7 +103,6 @@ footer {
 
 img.logo_header {
     width: 61px;
-    /*Taille du logo fixe constamment*/
     height: 19px;
 }
 
@@ -132,7 +131,6 @@ img.logo_header {
     background: #F2F2F2;
     height: 49px;
     width: 50px;
-    /*Taille de l'icone fixe*/
     border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
@@ -166,7 +164,6 @@ img.logo_header {
     border-radius: 0px 15px 15px 0px;
     border: solid #0065FC;
     width: 132px;
-    /*Taille du bouton fixe*/
 }
 
 #bouton-rechercher:active {
@@ -212,7 +209,6 @@ img.logo_header {
     font-weight: bold;
     border: none;
     width: 54px;
-    /*Taille ne change pas*/
     display: flex;
     align-items: center;
 }
@@ -305,6 +301,10 @@ img.logo_header {
     margin-top: 30px;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+}
+
 .hebergements img {
     display: flex;
     object-fit: cover;
@@ -320,7 +320,7 @@ img.logo_header {
 
 .hebergements .card-subtitle {
     margin: 8px 0px;
-    height: 19px;
+    height: auto;
 }
 
 .bouton-afficher-plus {
@@ -423,8 +423,9 @@ img.logo_header {
 
 /****** Footer ***********/
 
-.liens-footer h4 {
+.liens-footer .titre {
     font-size: 18px;
+    font-weight: bold;
 }
 
 .liens-footer ul {
