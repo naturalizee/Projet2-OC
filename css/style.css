@@ -229,6 +229,9 @@ img.logo_header {
 }
 
 #bouton-rechercher-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: none;
     background-color: #0065FC;
     border-radius: 15px;
@@ -242,9 +245,6 @@ img.logo_header {
 #bouton-rechercher-mobile i {
     color: white;
     font-size: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: bold;
     width: 100%;
 }
