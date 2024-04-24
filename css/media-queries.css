@@ -173,8 +173,6 @@
 
     .barre-filtres {
         display: flex;
-        justify-content: flex-start;
-        align-items: space-between;
         flex-wrap: wrap;
         gap: 10px;
     }
