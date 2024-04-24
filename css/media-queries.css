@@ -114,7 +114,7 @@
         padding-bottom: 16px;
     }
 
-    .header {
+    header {
         display: flex;
         flex-direction: column;
         margin: 0px;
@@ -140,25 +140,6 @@
         padding-top: 30px;
     }
 
-    /****** Filtres ***********/
-    .element-filtre-1 {
-        width: 100%;
-    }
-
-    .barre-filtres div {
-        justify-content: flex-start;
-    }
-
-    .barre-filtres {
-        display: flex;
-        width: 100%;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        max-width: 375px;
-        gap: 10px;
-        width: 100%;
-    }
-
     #bouton-rechercher {
         display: none;
     }
@@ -174,6 +155,33 @@
     #localisation {
         width: 100%;
         border-right: none;
+    }
+
+
+    /****** Filtres ***********/
+    .element-filtre-1 {
+        width: 100%;
+    }
+
+    .barre-filtres {
+        width: 100%;
+    }
+
+    .barre-filtres div {
+        justify-content: flex-start;
+    }
+
+    .barre-filtres {
+        display: flex;
+        justify-content: flex-start;
+        align-items: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .barre-filtres button {
+        width: 49%;
+        font-size: 14px;
     }
 
     /****** Hebergements-and-populaires ***********/

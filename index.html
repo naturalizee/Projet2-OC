@@ -19,69 +19,53 @@
 <body>
     <div class="main-container">
         <header>
-            <div class="header">
-                <div class="logo-container">
-                    <img src="images/logo/Booki.png" alt="Logo du site" class="logo_header">
-                </div>
-                <div class="menu-container">
-                    <nav>
-                        <ul class="liste_nav">
-                            <li><a href="#ancre-hebergements">Hébergements</a></li>
-                            <li><a href="#ancre-activites">Activités</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <img class="logo-container" src="images/logo/Booki.png" alt="Logo du site" class="logo_header">
+            <nav class="menu-container">
+                <ul class="liste_nav">
+                    <li><a href="#ancre-hebergements">Hébergements</a></li>
+                    <li><a href="#ancre-activites">Activités</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
-            <div class="parametres-recherche">
-                <section class="promesse">
+            <section class="parametres-recherche">
+                <div class="promesse">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
-                </section>
-                <div class="formulaire-de-recherche">
-                    <form class="formulaire">
-                        <div class="formulaire-recherche">
-                            <div class="element-formulaire-1"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="element-formulaire-2"><input type="text" name="localisation" id="localisation"
-                                    placeholder="Marseille, France"></div>
-                            <div class="element-formulaire-3"><input type="button" name="bouton-rechercher"
-                                    id="bouton-rechercher" value="Rechercher"></div>
-                            <div class="element-formulaire-mobile"><button type="button" name="bouton-rechercher-mobile"
-                                    id="bouton-rechercher-mobile">
-                                    <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </siv>
+                    <div class="formulaire-de-recherche">
+                        <form class="formulaire">
+                            <div class="formulaire-recherche">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <input type="text" name="localisation" id="localisation"
+                                    placeholder="Marseille, France">
+                                <input type="button" name="bouton-rechercher" id="bouton-rechercher" value="Rechercher">
+                                <button type="button" name="bouton-rechercher-mobile" id="bouton-rechercher-mobile">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="filtres">
-                    <div class="element-filtre-1">Filtres
+                        </form>
                     </div>
-                    <div class="barre-filtres">
-                        <div class="element-filtre-2">
+                    <div class="filtres">
+                        <div class="element-filtre-1">Filtres
+                        </div>
+                        <div class="barre-filtres">
                             <button type="button" name="filtre-economique" id="filtre-economique">
                                 <i class="fa-solid fa-money-bill-wave"></i> Économique</button>
-                        </div>
-                        <div class="element-filtre-3">
                             <button type="button" name="filtre-familial" id="filtre-familial">
                                 <i class="fa-solid fa-person"></i> Familial</button>
-                        </div>
-                        <div class="element-filtre-4">
                             <button type="button" name="filtre-romantique" id="filtre-romantique">
                                 <i class="fa-solid fa-heart"></i> Romantique</button>
-                        </div>
-                        <div class="element-filtre-5">
                             <button type="button" name="filtre-nos-pepites" id="filtre-nos-pepites">
                                 <i class="fa-solid fa-fire"></i> Nos pépites</button>
                         </div>
                     </div>
-                </div>
-                <div class="barre-infos">
-                    <i class="fa-solid fa-info"></i>
-                    <div class="nbr-logements">Plus de 500 logements sont disponibles dans cette ville</div>
-                </div>
-            </div>
+                    <div class="barre-infos">
+                        <i class="fa-solid fa-info"></i>
+                        <div class="nbr-logements">Plus de 500 logements sont disponibles dans cette ville</div>
+                    </div>
+            </section>
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="ancre-hebergements">

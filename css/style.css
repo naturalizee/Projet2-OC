@@ -84,7 +84,7 @@ footer {
     margin-top: 2px;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,7 +101,7 @@ footer {
     margin-right: 0;
 }
 
-img.logo_header {
+img.logo-container {
     width: 61px;
     height: 19px;
 }
@@ -120,6 +120,7 @@ img.logo_header {
 .formulaire-recherche {
     display: flex;
     justify-content: flex-start;
+    width: 80%;
 }
 
 .formulaire input {
@@ -171,7 +172,7 @@ img.logo_header {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.element-formulaire-2 input[type="text"] {
+#localisation[type="text"] {
     font-weight: bold;
     text-align: center;
     font-size: 18px;
@@ -213,18 +214,12 @@ img.logo_header {
     align-items: center;
 }
 
-#filtre-economique,
-#filtre-familial,
-#filtre-romantique,
-#filtre-nos-pepites {
+.barre-filtres button {
     padding: 0px 19px;
     background-color: white
 }
 
-#filtre-economique:hover,
-#filtre-familial:hover,
-#filtre-romantique:hover,
-#filtre-nos-pepites:hover {
+.barre-filtres button:hover {
     background-color: #DEEBFF;
 }
 
